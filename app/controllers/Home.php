@@ -3,6 +3,6 @@
 class Home {
     public function index()
     {
-        echo 'home/index';
+        $this->view('home/index'); //memanggil file yang ada di dalam folder views lalu ke folder home dan nama file index.php
     }
 }
