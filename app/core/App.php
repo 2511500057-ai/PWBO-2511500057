@@ -10,7 +10,7 @@ class App {
         $url = $this->parseURL();
        
         //controller
-        if (file_exists('../app/controllers/'.$url[0].'.php')){ //cek dulu apakah ada file di dalam folder controllers
+        if(file_exists('../app/controllers/'.$url[0].'.php')){ //cek dulu apakah ada file di dalam folder controllers
             $this->controller = $url[0];
             unset($url[0]); //hapus elemen array ke1
         }
