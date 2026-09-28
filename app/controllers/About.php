@@ -3,11 +3,19 @@
 class About extends Controller {
     public function index($nama = 'Dono', $pekerjaan = 'Pelawak')
     {
-        $this->view('about/index');
+        $data['nama'] = $nama;
+        $data['pekerjaan'] = $pekerjaan;
+        $data['judul'] = 'About';
+        $this->view('templates/header');
+        $this->view('about/index', $data);
+        $this->view('templates/footer');
     }
 
     public function page()
     {
-        $this->view('about/page');;
+        $data['judul'] = 'Pages';
+        $this->view('templates/header');
+        $this->view('about/page');
+        $this->view('templates/footer');
     }
 }
