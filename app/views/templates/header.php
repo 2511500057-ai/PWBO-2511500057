@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?php echo $data['judul']; ?></title>
+    <title>Halaman <?php echo $data['judul']; ?></title>
     <link rel="stylesheet" href="<?php echo BASEURL; ?>/css/bootstrap.css">
 </head>
 
@@ -20,6 +20,10 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="<?php echo BASEURL; ?>">
                     Home <span class="sr-only">(current)</span>
+                </a>
+
+                <a class="nav-item nav-link" href="<?php echo BASEURL; ?>/mahasiswa">
+                    Mahasiswa</span>
                 </a>
 
                 <a class="nav-item nav-link" href="<?php echo BASEURL; ?>/about">
