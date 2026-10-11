@@ -1,6 +1,6 @@
 <?php
 
-define('BASEURL', 'http://localhost/PWBO-2511500057/public/');
+define('BASEURL', 'http://localhost/PWBO-2511500057/public');
 
 //DB
 define('DB_HOST', 'localhost');
