@@ -26,6 +26,10 @@
                     Mahasiswa</span>
                 </a>
 
+                <a class="nav-item nav-link" href="<?php echo BASEURL; ?>/pengembalian">
+                    Pengembalian Buku</span>
+                </a>
+
                 <a class="nav-item nav-link" href="<?php echo BASEURL; ?>/about">
                     About
                 </a>
