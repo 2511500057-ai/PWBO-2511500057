@@ -16,9 +16,9 @@
                     <?php foreach($data['pgln'] as $pgln) : ?>
                         <li class="list-group-item">
                             <?php echo $pgln['NmMhs057']; ?>
-                            <a href="<?php echo BASEURL; ?>/pengembalian/hapus/<?php echo $pgln['id']; ?>"class="badge badge-danger float-right ml-1" onclick="return confirm('Yakin');">
+                            <a href="<?php echo BASEURL; ?>/pengembalian/hapus/<?php echo $pgln['Kd_Kembali057']; ?>"class="badge badge-danger float-right ml-1" onclick="return confirm('Yakin');">
                                 hapus</a>
-                            <a href="<?php echo BASEURL; ?>/pengembalian/detail/<?php echo $pgln['id']; ?>"class="badge badge-primary float-right ml-1">
+                            <a href="<?php echo BASEURL; ?>/pengembalian/detail/<?php echo $pgln['Kd_Kembali057']; ?>"class="badge badge-primary float-right ml-1">
                                 detail</a>
                         </li>
                     <?php endforeach; ?>

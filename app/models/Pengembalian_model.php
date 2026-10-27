@@ -16,8 +16,8 @@ class Pengembalian_model {
 
     public function getPengembalianById($id)
     {
-        $this->db->query('SELECT * FROM '.$this->table.' where id=:Kd_Kembali057');
-        $this->db->bind('id', $id);
+        $this->db->query('SELECT * FROM '.$this->table.' WHERE Kd_Kembali057=:Kd_Kembali057');
+        $this->db->bind('Kd_Kembali057', $id);
         return $this->db->single();
     }
 
@@ -41,9 +41,9 @@ class Pengembalian_model {
 
 public function hapusDataPengembalian($id)
 {
-    $query = "DELETE FROM $this->table WHERE id= :Kd_Kembali057";
+    $query = "DELETE FROM $this->table WHERE Kd_Kembali057= :Kd_Kembali057";
     $this->db->query($query);
-    $this->db->bind('id', $id);
+    $this->db->bind('Kd_Kembali057', $id);
 
     $this->db->execute();
     return $this->db->rowCount();
